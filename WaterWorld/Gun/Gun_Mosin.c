@@ -1,15 +1,15 @@
 #include "Gun.c"
 
 class Gun_Mosin : Gun {
-	override string GetName() {
-		return "Mosin9130_Black";
-	}
+    override string GetName() {
+        return "Mosin9130_Black";
+    }
 
-	override TStringArray GetAttachments() {
-		return {"PUScopeOptic"};
-	}
+    override TStringArray GetAttachments() {
+        return {"PUScopeOptic"};
+    }
 
-	override string GetAmmoName() {
-		return "Ammo_762x54";
-	}
+    override string GetAmmoName() {
+        return "Ammo_762x54";
+    }
 }

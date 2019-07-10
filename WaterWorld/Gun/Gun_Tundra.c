@@ -1,15 +1,15 @@
 #include "Gun.c"
 
 class Gun_Tundra : Gun {
-	override string GetName() {
-		return "Winchester70";
-	}
+    override string GetName() {
+        return "Winchester70";
+    }
 
-	override TStringArray GetAttachments() {
-		return {"HuntingOptic"};
-	}
+    override TStringArray GetAttachments() {
+        return {"HuntingOptic"};
+    }
 
-	override string GetAmmoName() {
-		return "Ammo_308Win";
+    override string GetAmmoName() {
+        return "Ammo_308Win";
 	}
 }
