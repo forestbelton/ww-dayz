@@ -25,7 +25,11 @@ class Gun {
 
         array<string> attachments = GetAttachments();
         for (int i = 0; i < attachments.Count(); ++i) {
-            gun.GetInventory().CreateAttachment(attachments[i]);
+            auto pOptic = gun.GetInventory().CreateAttachment(attachments[i]);
+            
+            if (attachments[i] == "PSO1Optic") {
+                pOptic.GetInventory().CreateAttachment("Battery9V");
+            }
         }
 
         EntityAI ammo = player.GetInventory().CreateInInventory(GetAmmoName());
