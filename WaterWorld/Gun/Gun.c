@@ -10,13 +10,13 @@ class Gun {
     }
 
     array<string> GetAttachments() {
-		return {};
+        return {};
     }
 
     GunData Create(PlayerBase player, bool createInHands) {
         int i;
         EntityAI gun;
-		EntityAI ammo;
+        EntityAI ammo;
         string name = GetName();
         array<string> attachments = GetAttachments();
 
@@ -31,7 +31,7 @@ class Gun {
         }
 
         ammo = player.GetInventory().CreateInInventory(GetAmmoName());
-		return new GunData(gun, ammo);
+        return new GunData(gun, ammo);
     }
 }
 
