@@ -6,18 +6,24 @@
 #include "Gun_Saiga.c"
 #include "Gun_SKS.c"
 #include "Gun_Tundra.c"
+#include "Gun_AugSteyr.c"
+#include "Gun_VSS.c"
+#include "Gun_SVD.c"
 
 class GunFactory {
     autoptr array<ref Gun> primaryGuns = {
         new Gun_M4A1,
         new Gun_AK101,
-        new Gun_Saiga
+        new Gun_Saiga,
+        new Gun_AugSteyr
     };
 
     autoptr array<ref Gun> secondaryGuns = {
         new Gun_Mosin,
         new Gun_SKS,
-        new Gun_Tundra
+        new Gun_Tundra,
+        new Gun_VSS,
+        new Gun_SVD
     };
 
     void CreateAndAttachGuns(PlayerBase player) {
