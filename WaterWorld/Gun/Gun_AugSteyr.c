@@ -8,8 +8,4 @@ class Gun_AugSteyr : Gun {
     override string GetAmmoName() {
         return "Mag_STANAG_30Rnd";
     }
-
-    override TStringArray GetAttachments() {
-        return {};
-    }
 }
