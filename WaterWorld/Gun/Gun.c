@@ -18,7 +18,7 @@ class Gun {
         string name = GetName();
 
         if (createInHands) {
-        gun = player.GetInventory().CreateInHands(name);
+            gun = player.GetInventory().CreateInHands(name);
         } else {
             gun = player.GetInventory().CreateInInventory(name);
         }
