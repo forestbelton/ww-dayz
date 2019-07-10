@@ -1,3 +1,5 @@
+#include "Team.c"
+
 class BlueTeam : Team {
     string GetArmbandName() {
         return "Armband_Blue";
