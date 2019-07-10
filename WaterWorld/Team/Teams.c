@@ -8,6 +8,7 @@ class Teams {
     static Team lookupByUid(string uid) {
         auto playerTeams = new map<string, ref Team>();
 
+        // TODO: Move to JSON-based configuration
         playerTeams["XCCyBF3Yt3qiSWazXbdQDGSXTuG2Rj1MLa-DxwAOYrs="] = new RedTeam;   // Case
         playerTeams["6hNjhNa_MBB-oh1A2-AEkp0FPyXd5qaJtyZtXYnPPxs="] = new RedTeam;   // Wired
         playerTeams["m8FYV9srDOOAGngTNfuwdDO1GkK9oGhPBYymGaH9R7A="] = new BlueTeam;  // Donut
