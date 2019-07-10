@@ -15,4 +15,3 @@ class GunData {
         return m_ammo;
     }
 }
-
