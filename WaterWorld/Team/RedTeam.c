@@ -6,6 +6,6 @@ class RedTeam : Team {
     }
 
     override string GetBeretName() {
-        return "MilitaryBeret_UN";
+        return "MilitaryBeret_Red";
     }
 }
