@@ -1,4 +1,4 @@
-class Green Team : Team {
+class GreenTeam : Team {
     string GetArmbandName() {
         return "Armband_Green";
     }
